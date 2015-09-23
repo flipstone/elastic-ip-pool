@@ -20,6 +20,7 @@ executable elastic-ip-pool
   main-is:             Main.hs
   -- other-modules:       
   -- other-extensions:    
+  ld-options: -static -pthread
   build-depends:       base >=4.8 && <4.9,
                        amazonka == 1.3.2,
                        amazonka-ec2 == 1.3.2,
