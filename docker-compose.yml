@@ -1,0 +1,6 @@
+dev:
+  image: haskell:7.10.1
+  volumes:
+    - .:/elastic-ip-pool
+    - ~/.aws:/root/.aws
+  working_dir: /elastic-ip-pool
